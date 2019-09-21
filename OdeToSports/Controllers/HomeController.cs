@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OdeToSports.Data.Models;
+using OdeToSports.Data.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,21 @@ namespace OdeToSports.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        IBaseballData ibd;
+       
+
+        public HomeController()
         {
-            return View();
+            ibd = new InMemoryBaseballData();
+
+        }
+        public ActionResult Index()
+        {           
+            //1. Build a model.
+            var player = ibd.GetAllInfo();
+         
+            //2. Pass the model to the view.
+            return View(player);
         }
 
         public ActionResult About()

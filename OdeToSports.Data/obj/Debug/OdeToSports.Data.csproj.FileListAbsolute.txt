@@ -1,0 +1,6 @@
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\bin\Debug\OdeToSports.Data.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\bin\Debug\OdeToSports.Data.pdb
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.csprojAssemblyReference.cache
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.csproj.CoreCompileInputs.cache
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.pdb

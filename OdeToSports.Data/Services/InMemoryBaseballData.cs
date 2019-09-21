@@ -9,7 +9,7 @@ namespace OdeToSports.Data.Services
 {
    
 
-    public class InMemoryBaseballData
+    public class InMemoryBaseballData : IBaseballData
     {
         List<BaseballPlayer> bb;
 
@@ -29,6 +29,11 @@ namespace OdeToSports.Data.Services
 
 
             };
+        }
+
+        public IEnumerable<BaseballPlayer> GetAllInfo()
+        {
+            return bb.OrderBy(r => r.ID);
         }
     }
 }
