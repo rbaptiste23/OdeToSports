@@ -9,6 +9,7 @@ namespace OdeToSports.Data.Models
     public interface IBaseballData
     {
         IEnumerable<BaseballPlayer> GetAllInfo();
+        BaseballPlayer Get(int id);
 
 
     }

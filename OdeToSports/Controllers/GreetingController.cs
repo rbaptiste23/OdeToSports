@@ -11,11 +11,15 @@ namespace OdeToSports.Controllers
     public class GreetingController : Controller
     {
         // GET: Greeting
-        public ActionResult Index()
+        public ActionResult Index(string name)
         {
             var model = new GreetingViewModel();
             model.Message = ConfigurationManager.AppSettings["message"];
+            model.Name = name ?? "no name";
             return View(model);
+
+
+
         }
     }
 }

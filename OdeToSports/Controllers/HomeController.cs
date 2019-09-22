@@ -19,7 +19,8 @@ namespace OdeToSports.Controllers
 
         }
         public ActionResult Index()
-        {           
+        {      
+            
             //1. Build a model.
             var player = db.GetAllInfo();
          

@@ -80,3 +80,12 @@ C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.dll
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.Mvc.dll
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.xml
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.Mvc.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Net.Http.Formatting.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Web.Http.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Web.Http.WebHost.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Net.Http.Formatting.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Web.Http.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Web.Http.WebHost.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.pdb
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.xml
