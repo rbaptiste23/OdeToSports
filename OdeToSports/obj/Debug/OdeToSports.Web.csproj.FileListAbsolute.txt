@@ -76,3 +76,7 @@ C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\obj\Debug\OdeToSports.Web.c
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\obj\Debug\OdeToSports.Web.csproj.CopyComplete
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\obj\Debug\OdeToSports.dll
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\obj\Debug\OdeToSports.pdb
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.Mvc.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.Mvc.xml

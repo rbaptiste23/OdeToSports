@@ -10,18 +10,18 @@ namespace OdeToSports.Controllers
 {
     public class HomeController : Controller
     {
-        IBaseballData ibd;
+        IBaseballData db;
        
 
-        public HomeController()
+        public HomeController(IBaseballData db)
         {
-            ibd = new InMemoryBaseballData();
+            this.db = db;
 
         }
         public ActionResult Index()
         {           
             //1. Build a model.
-            var player = ibd.GetAllInfo();
+            var player = db.GetAllInfo();
          
             //2. Pass the model to the view.
             return View(player);
