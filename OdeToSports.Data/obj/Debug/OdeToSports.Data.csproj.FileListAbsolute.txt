@@ -21,3 +21,4 @@ C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\bin\Debug\System.Web.W
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.csproj.CopyComplete
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports.Data\obj\Debug\OdeToSports.Data.csprojAssemblyReference.cache

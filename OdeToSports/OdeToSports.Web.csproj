@@ -190,6 +190,7 @@
     <Content Include="Views\Sports\Index.cshtml" />
     <Content Include="Views\Sports\Details.cshtml" />
     <Content Include="Views\Sports\NotFound.cshtml" />
+    <Content Include="Views\Sports\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

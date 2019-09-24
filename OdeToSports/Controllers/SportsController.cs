@@ -15,12 +15,14 @@ namespace OdeToSports.Controllers
         {
             this.db = db; 
         }
+
+        [HttpGet]
         public ActionResult Index()
         {
             var model = db.GetAllInfo();
             return View(model);
         }
-
+        [HttpGet]
         public ActionResult Details(int id)
         {
             var model = db.Get(id);
@@ -32,5 +34,22 @@ namespace OdeToSports.Controllers
             return View(model);
 
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult Create(BaseballPlayer baseballPlayer)
+        {
+            db.Add(baseballPlayer);
+            return View();
+        }
+
+
     }
 }

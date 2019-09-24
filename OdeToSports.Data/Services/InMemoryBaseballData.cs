@@ -11,11 +11,11 @@ namespace OdeToSports.Data.Services
 
     public class InMemoryBaseballData : IBaseballData
     {
-        List<BaseballPlayer> baseballPlayer;
+        List<BaseballPlayer> baseballPlayers;
 
         public InMemoryBaseballData()
         {
-            baseballPlayer = new List<BaseballPlayer>()
+            baseballPlayers = new List<BaseballPlayer>()
             {
                 new BaseballPlayer{ ID = 1, PlayerName="Dave Stewart", Position = PlayerPosition.Pitcher },
                 new BaseballPlayer{ ID = 2, PlayerName="Earl Willams", Position = PlayerPosition.Catcher },
@@ -31,14 +31,20 @@ namespace OdeToSports.Data.Services
             };
         }
 
+        public void Add(BaseballPlayer baseballPlayer)
+        {
+            baseballPlayers.Add(baseballPlayer);
+            baseballPlayer.ID = baseballPlayers.Max(r => r.ID) + 1;
+        }
+
         public BaseballPlayer Get(int id)
         {
-            return baseballPlayer.FirstOrDefault(r => r.ID == id);
+            return baseballPlayers.FirstOrDefault(r => r.ID == id);
         }
 
         public IEnumerable<BaseballPlayer> GetAllInfo()
         {
-            return baseballPlayer.OrderBy(r => r.ID);
+            return baseballPlayers.OrderBy(r => r.ID);
         }
     }
 }

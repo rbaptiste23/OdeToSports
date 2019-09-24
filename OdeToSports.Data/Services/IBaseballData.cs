@@ -11,6 +11,7 @@ namespace OdeToSports.Data.Models
         IEnumerable<BaseballPlayer> GetAllInfo();
         BaseballPlayer Get(int id);
 
+        void Add(BaseballPlayer baseballPlayer);
 
     }
 }
