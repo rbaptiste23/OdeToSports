@@ -52,13 +52,15 @@ namespace OdeToSports.Controllers
             if (ModelState.IsValid)
             {
                 db.Add(baseballPlayer);
-                return View();
+                return RedirectToAction("Details",  new { id = baseballPlayer.ID });
 
             }
 
             return View();
            
         }
+
+        
 
 
     }
