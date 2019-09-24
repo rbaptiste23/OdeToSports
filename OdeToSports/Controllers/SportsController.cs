@@ -60,7 +60,32 @@ namespace OdeToSports.Controllers
            
         }
 
-        
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = db.Get(id);
+            if (model == null)
+            {
+                return View("NotFound");
+            }
+
+            return View(model);
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(BaseballPlayer baseballPlayer)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Update(baseballPlayer);
+
+                return RedirectToAction("Details", new { id = baseballPlayer.ID });
+            }
+            return View(baseballPlayer);
+
+        }
 
 
     }

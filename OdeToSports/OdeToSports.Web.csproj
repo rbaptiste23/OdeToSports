@@ -191,6 +191,7 @@
     <Content Include="Views\Sports\Details.cshtml" />
     <Content Include="Views\Sports\NotFound.cshtml" />
     <Content Include="Views\Sports\Create.cshtml" />
+    <Content Include="Views\Sports\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

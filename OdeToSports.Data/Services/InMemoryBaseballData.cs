@@ -37,6 +37,7 @@ namespace OdeToSports.Data.Services
             baseballPlayer.ID = baseballPlayers.Max(r => r.ID) + 1;
         }
 
+   
         public BaseballPlayer Get(int id)
         {
             return baseballPlayers.FirstOrDefault(r => r.ID == id);
@@ -45,6 +46,16 @@ namespace OdeToSports.Data.Services
         public IEnumerable<BaseballPlayer> GetAllInfo()
         {
             return baseballPlayers.OrderBy(r => r.ID);
+        }
+
+        public void Update(BaseballPlayer baseballPlayer)
+        {
+            var existing = Get(baseballPlayer.ID);
+            if (existing != null)
+            {
+                existing.PlayerName = baseballPlayer.PlayerName;
+                existing.Position = baseballPlayer.Position;
+            }
         }
     }
 }

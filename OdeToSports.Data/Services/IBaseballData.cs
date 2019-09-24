@@ -13,5 +13,7 @@ namespace OdeToSports.Data.Models
 
         void Add(BaseballPlayer baseballPlayer);
 
+        void Update(BaseballPlayer baseballPlayer);
+
     }
 }
