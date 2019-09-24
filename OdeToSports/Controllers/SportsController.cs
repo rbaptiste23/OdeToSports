@@ -44,12 +44,10 @@ namespace OdeToSports.Controllers
 
         [ValidateAntiForgeryToken]
         [HttpPost]
+       
         public ActionResult Create(BaseballPlayer baseballPlayer)
         {
-            if (String.IsNullOrEmpty(baseballPlayer.PlayerName))
-            {
-                ModelState.AddModelError(nameof(baseballPlayer.PlayerName), "The Player's name is required.");
-            }
+        
 
             if (ModelState.IsValid)
             {
