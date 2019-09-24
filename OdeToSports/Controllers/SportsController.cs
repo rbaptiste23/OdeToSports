@@ -46,8 +46,20 @@ namespace OdeToSports.Controllers
         [HttpPost]
         public ActionResult Create(BaseballPlayer baseballPlayer)
         {
-            db.Add(baseballPlayer);
+            if (String.IsNullOrEmpty(baseballPlayer.PlayerName))
+            {
+                ModelState.AddModelError(nameof(baseballPlayer.PlayerName), "The Player's name is required.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                db.Add(baseballPlayer);
+                return View();
+
+            }
+
             return View();
+           
         }
 
 
