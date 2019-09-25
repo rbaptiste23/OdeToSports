@@ -37,7 +37,15 @@ namespace OdeToSports.Data.Services
             baseballPlayer.ID = baseballPlayers.Max(r => r.ID) + 1;
         }
 
-   
+        public void Delete(int id)
+        {
+            var baseballPlayer = Get(id);
+            if (baseballPlayer != null)
+            {
+                baseballPlayers.Remove(baseballPlayer);
+            }
+        }
+
         public BaseballPlayer Get(int id)
         {
             return baseballPlayers.FirstOrDefault(r => r.ID == id);

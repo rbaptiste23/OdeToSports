@@ -89,3 +89,8 @@ C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\System.Web.Http.WebHost
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.dll
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.pdb
 C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\Autofac.Integration.WebApi.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\EntityFramework.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\EntityFramework.SqlServer.dll
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\OdeToSports.Data.dll.config
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\EntityFramework.xml
+C:\Users\C5RB00\source\repos\OdeToSports\OdeToSports\bin\EntityFramework.SqlServer.xml

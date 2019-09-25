@@ -23,6 +23,8 @@ namespace OdeToSports.Data.Services
             db.SaveChanges();
         }
 
+      
+
         public BaseballPlayer Get(int id)
         {
             return db.BaseballPlayers.FirstOrDefault(r => r.ID == id);
@@ -49,6 +51,20 @@ namespace OdeToSports.Data.Services
             var entry = db.Entry(baseballPlayer);
             entry.State = EntityState.Modified;
             db.SaveChanges();             
+        }
+
+
+        public void Delete(int id)
+        {
+
+            var baseballPlayer = db.BaseballPlayers.Find(id);
+            if (baseballPlayer != null)
+            {
+                db.BaseballPlayers.Remove(baseballPlayer);
+                db.SaveChanges();
+
+            }
+        
         }
     }
 }

@@ -15,5 +15,7 @@ namespace OdeToSports.Data.Models
 
         void Update(BaseballPlayer baseballPlayer);
 
+        void Delete(int id);
+
     }
 }
