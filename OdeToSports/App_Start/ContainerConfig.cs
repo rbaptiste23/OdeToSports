@@ -22,9 +22,12 @@ namespace OdeToSports.Web
             builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
 
 
-            builder.RegisterType<InMemoryBaseballData>()
+            builder.RegisterType<SqlBaseballData>()
                    .As<IBaseballData>()
-                   .SingleInstance();
+                   .InstancePerRequest();
+
+
+            builder.RegisterType<OdeToSportsDbContext>().InstancePerRequest();
 
 
             var container = builder.Build();
