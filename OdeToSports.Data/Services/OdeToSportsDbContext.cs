@@ -10,7 +10,7 @@ namespace OdeToSports.Data.Services
 {
     public class OdeToSportsDbContext : DbContext
     {
-        public DbSet<BaseballPlayer> MyProop { get; set; }
+        public DbSet<BaseballPlayer> BaseballPlayers { get; set; }
 
     }
 }
