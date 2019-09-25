@@ -12,7 +12,7 @@ namespace OdeToSports.Data.Models
         public int ID { get; set; }
 
         [Required]
-   
+        [MaxLength(255)]  
         [Display(Name ="Player's Name")]
         public string PlayerName { get; set; }
 
